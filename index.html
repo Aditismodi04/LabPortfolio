@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditi Modi • Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Aditi Modi • BE IT student at SVIT Vasad. Backend (Python), Databases, Flask learner.">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a class="logo" href="#home">AM</a>
+            <nav class="menu" aria-label="Primary">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        </div>
+    </header>
+
+    <main id="home">
+        <section class="hero container">
+            <div class="hero__content">
+                <p class="eyebrow">BE IT @ SVIT Vasad</p>
+                <h1>Hi, I'm <span class="accent">Aditi Modi</span>.</h1>
+                <p class="subtitle">Backend-leaning developer learning Flask • Passionate about Python and Databases.</p>
+                <div class="hero__cta">
+                    <a class="btn primary" href="#contact">Contact Me</a>
+                    <a class="btn ghost" href="#projects">See Projects</a>
+                </div>
+            </div>
+            <div class="hero__badge" aria-hidden="true">Python • SQL • Flask</div>
+        </section>
+
+        <section id="about" class="section container">
+            <h2>About</h2>
+            <p>
+                I'm pursuing a Bachelor of Engineering in Information Technology at SVIT, Vasad. I enjoy building backend
+                services with Python and exploring database administration. I'm currently learning Flask to strengthen my web
+                development skills.
+            </p>
+            <p>
+                Beyond tech, I value communication and problem solving. In my free time, I enjoy painting, crocheting, and reading.
+            </p>
+        </section>
+
+        <section id="skills" class="section container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="card">
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Java (Basics)</li>
+                        <li>HTML &amp; CSS (Basics)</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Web &amp; Backend</h3>
+                    <ul>
+                        <li>Flask (Learning)</li>
+                        <li>REST fundamentals</li>
+                        <li>Authentication basics</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Databases</h3>
+                    <ul>
+                        <li>Schema design</li>
+                        <li>Joins, indexing basics</li>
+                        <li>Queries &amp; optimization basics</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Communication</li>
+                        <li>Problem Solving</li>
+                        <li>Teamwork</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <article class="card project">
+                    <h3>Flask Practice API</h3>
+                    <p>A simple CRUD API built while learning Flask. Focus on routing, JSON, and basic data storage.</p>
+                    <div class="tags"><span>Python</span><span>Flask</span><span>REST</span></div>
+                </article>
+                <article class="card project">
+                    <h3>SQL Playground</h3>
+                    <p>Collection of optimized SQL queries and schema designs for sample datasets.</p>
+                    <div class="tags"><span>SQL</span><span>Database</span></div>
+                </article>
+                <article class="card project soon">
+                    <h3>Coming Soon</h3>
+                    <p>More projects are on the way as I learn and build!</p>
+                    <div class="tags"><span>Learning</span></div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section container">
+            <h2>Contact</h2>
+            <p>Want to collaborate or have an opportunity? Reach out:</p>
+            <form id="contactForm" class="contact-form" action="https://formspree.io/f/xeoqjwvd" method="POST">
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Your name" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-row">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Say hello..." required></textarea>
+                </div>
+                <button class="btn primary" type="submit">Send</button>
+                <p class="form-note">This form uses Formspree for demo. Replace with your endpoint when ready.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year"></span> Aditi Modi • Built with HTML, CSS, and JS</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
